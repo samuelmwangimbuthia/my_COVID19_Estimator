@@ -16,19 +16,20 @@ const covid19ImpactEstimator = (data) =>{
     return {
          // Best case estimation
         impact: {
-            currentlyInfected = data.reportedCases * 10,
-            infectionsByRequestedTime = currentlyInfected * 512,
+            currentlyInfected : data.reportedCases * 10,
+            infectionsByRequestedTime: currentlyInfected * 512,
 
         },    
          //   Severe Case Estimation
         severeImpact: {
-            currentlyInfected = data.reportedCases * 50,
-            infectionsByRequestedTime = currentlyInfected * 512,
+            currentlyInfected: data.reportedCases * 50,
+            infectionsByRequestedTime : currentlyInfected * 512,
         },  
         
     }
 
 };
+
 
 
 export default covid19ImpactEstimator;
